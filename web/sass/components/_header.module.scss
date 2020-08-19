@@ -5,14 +5,28 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  @include respond(tab-land) {
+    height: 60rem;
+  }
 
   &-box {
     display: flex;
     justify-content: space-between;
     width: 60%;
+    @include respond(tab-land) {
+      flex-direction: column;
+      width: 90%;
+    }
     &-img {
+      @include respond(tab-land) {
+        text-align: center;
+      }
       img {
         height: 38rem;
+        @include respond(tab-land) {
+          height: 20rem;
+        }
       }
     }
 
@@ -23,6 +37,9 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+      @include respond(tab-land) {
+        text-align: center;
+      }
     }
   }
 }

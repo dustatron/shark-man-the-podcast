@@ -2,6 +2,7 @@
 
 .index {
   margin: auto;
+  padding-bottom: 50rem;
   width: 83%;
   &-listen {
     h2 {
@@ -32,6 +33,9 @@
     &-item {
       margin-top: 4rem;
       width: 60%;
+      @include respond(tab-port) {
+        width: 98%;
+      }
 
       &-head {
         background: $blue-dark;

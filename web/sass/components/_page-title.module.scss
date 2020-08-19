@@ -6,4 +6,9 @@
   font-size: 6.5rem;
   margin-top: -1.88rem;
   margin-left: 5rem;
+  @include respond(tab-port) {
+    margin: -0.05rem auto 0 auto;
+    text-align: center;
+    line-height: 4.8rem;
+  }
 }
