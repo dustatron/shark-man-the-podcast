@@ -1,10 +1,16 @@
-import Navbar from './Navbar';
-
+import s from '../sass/components/_header.module.scss';
 const header = () => {
   return (
-    <div>
-      <Navbar />
-      <h2>Header</h2>
+    <div className={s.header}>
+      <div className={s['header-box']}>
+        <div className={s['header-box-img']}>
+          <img src='/img/shark-rainbow.png' alt='shark rainbow' />
+        </div>
+        <div className={s['header-box-brand']}>
+          <div>Shark-Man</div>
+          <div>The Podcast</div>
+        </div>
+      </div>
     </div>
   );
 };

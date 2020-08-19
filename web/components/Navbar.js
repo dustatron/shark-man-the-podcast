@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 
 const Navbar = () => {
-  const [selected, setSelected] = useState('');
+  const [selected, setSelected] = useState('/');
 
   const handleClick = (select) => {
     setSelected(select);
