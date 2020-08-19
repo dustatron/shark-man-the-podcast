@@ -1,4 +1,4 @@
-import s from '../sass/components/contact.module.scss';
+import s from '../sass/pages/contact.module.scss';
 
 const contact = () => {
   return (

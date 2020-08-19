@@ -1,4 +1,4 @@
-import s from '../sass/components/bts.module.scss';
+import s from '../sass/pages/bts.module.scss';
 
 const bts = () => {
   return (

@@ -1,0 +1,55 @@
+@import '../main.scss';
+.navbar {
+  font-size: $normal-font;
+  display: flex;
+  justify-content: space-between;
+  background: $blue-mid;
+  padding: 2rem 8rem;
+
+  &-brand {
+    font-family: $brand-font;
+    font-size: 2rem;
+    color: $white;
+    line-height: 1.7rem;
+    a {
+      color: white;
+      text-decoration: none;
+      &:after,
+      &:before {
+        margin: 0;
+        padding: 0;
+        box-sizing: inherit;
+      }
+    }
+  }
+  &-menu {
+    ul {
+      list-style: none;
+      display: flex;
+      margin-top: 1rem;
+      li {
+        padding-left: 3rem;
+        transition: all 0.2s;
+        a {
+          color: white;
+          text-decoration: none;
+          &:after,
+          &:before {
+            margin: 0;
+            padding: 0;
+            box-sizing: inherit;
+          }
+        }
+
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+}
+
+.selected {
+  font-weight: 900;
+  border-bottom: 2px solid $white;
+}

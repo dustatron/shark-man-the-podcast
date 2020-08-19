@@ -1,4 +1,4 @@
-import s from '../sass/components/credits.module.scss';
+import s from '../sass/pages/credits.module.scss';
 const credits = () => {
   return (
     <div className={s.credits}>
