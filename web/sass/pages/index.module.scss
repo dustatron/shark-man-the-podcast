@@ -1,3 +1,52 @@
+@import '../main.scss';
+
 .index {
-  color: red;
+  margin: auto;
+  width: 83%;
+  &-listen {
+    h2 {
+      font-weight: 400;
+      font-size: $sub-title;
+      padding: 2rem 0;
+    }
+    &-icons {
+      ul {
+        list-style: none;
+        display: flex;
+      }
+    }
+  }
+
+  &-blurb {
+    padding: 3rem 0;
+    font-size: 1.9rem;
+  }
+
+  &-list {
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &-item {
+      margin-top: 4rem;
+      width: 60%;
+
+      &-head {
+        background: $blue-dark;
+        height: 2rem;
+        color: $white;
+        padding: 1rem 2rem;
+        font-size: $normal-font;
+        font-weight: 600;
+        border-radius: 5px 5px 0 0;
+        z-index: 10;
+      }
+      iframe {
+        width: 100%;
+        margin-top: -0.2rem;
+      }
+    }
+  }
 }

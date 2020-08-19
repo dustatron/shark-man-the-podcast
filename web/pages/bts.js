@@ -1,9 +1,10 @@
 import s from '../sass/pages/bts.module.scss';
+import PageTitle from '../components/PageTitle';
 
 const bts = () => {
   return (
     <div className={s.bts}>
-      <h1>BTS</h1>
+      <PageTitle title={'Behind the scenes'} />
     </div>
   );
 };

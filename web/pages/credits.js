@@ -1,8 +1,9 @@
 import s from '../sass/pages/credits.module.scss';
+import PageTitle from '../components/PageTitle';
 const credits = () => {
   return (
     <div className={s.credits}>
-      <h1>Credits</h1>
+      <PageTitle title={'Credits'} />
     </div>
   );
 };

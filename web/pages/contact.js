@@ -1,9 +1,10 @@
 import s from '../sass/pages/contact.module.scss';
+import PageTitle from '../components/PageTitle';
 
 const contact = () => {
   return (
     <div className={s.contact}>
-      <h1>Contact Us</h1>
+      <PageTitle title={'Contact Us'} />
     </div>
   );
 };
