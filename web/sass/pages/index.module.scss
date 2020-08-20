@@ -3,7 +3,7 @@
 .index {
   margin: auto;
   padding-bottom: 50rem;
-  width: 40%;
+  width: 45%;
   @include respond(tab-port) {
     width: 80%;
   }
@@ -34,11 +34,8 @@
     flex-direction: column;
 
     &-item {
-      margin-top: 4rem;
+      // margin-top: 4rem;
       width: 100%;
-      @include respond(tab-port) {
-        width: 100%;
-      }
 
       &-head {
         background: $blue-dark;
@@ -52,7 +49,18 @@
       }
       iframe {
         width: 100%;
-        margin-top: -0.2rem;
+        // min-height: 16rem;
+        // margin-top: -0.2rem;
+        margin-bottom: 2rem;
+
+        // @include respond(tab-land) {
+        //   // min-height: 1rem;
+        //   margin-bottom: 1rem;
+        // }
+        @include respond(big-desktop) {
+          min-height: 180px;
+          margin-bottom: 2rem;
+        }
       }
     }
   }

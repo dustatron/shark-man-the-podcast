@@ -10,10 +10,10 @@ function urlFor(source) {
   return imageUrlBuilder(client).image(source);
 }
 
-const credits = ({ crew, cast }) => {
+const credits = ({ crew, cast, section }) => {
   return (
     <>
-      <PageTitle title={'Credits'} />
+      <PageTitle title={section.title} />
       <div className={s.credits}>
         <h2>Creative & Production</h2>
         <div className={s['credits-crew']}>
@@ -79,5 +79,8 @@ credits.getInitialProps = async () => ({
     `),
   cast: await client.fetch(groq`
     *[_type == "cast"]
+    `),
+  section: await client.fetch(groq`
+    *[_type == "section" && slug.current == "credits"][0]
     `),
 });
