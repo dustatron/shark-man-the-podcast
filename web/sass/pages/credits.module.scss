@@ -8,4 +8,106 @@
     font-size: $sub-title;
     padding: 2rem 0;
   }
+
+  &-crew {
+    display: flex;
+    flex-wrap: wrap;
+
+    &-member {
+      width: 38rem;
+      height: 23.7rem;
+      margin: 5px;
+      border: 1px solid $blue-dark;
+      border-radius: 5px;
+
+      &-name {
+        background: $blue-dark;
+        color: $white;
+        padding: 0.5rem 1rem;
+        font-size: 1.8rem;
+        font-weight: 700;
+      }
+      &-body {
+        width: 95%;
+        margin: auto;
+        display: flex;
+        border-bottom: 1px solid black;
+        // justify-content: center;
+        &-img {
+          // padding: 5px;
+          margin: 5px 5px 2px 0;
+          img {
+            height: 146px;
+          }
+        }
+        &-info {
+          padding: 6px;
+          font-size: 1.3rem;
+        }
+      }
+
+      &-job {
+        width: 95%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 6px;
+        font-weight: 700;
+        font-size: 1.15rem;
+        &-item {
+          margin: 1px 8px;
+        }
+      }
+    }
+  }
+
+  &-cast {
+    display: flex;
+    flex-wrap: wrap;
+
+    &-member {
+      width: 38rem;
+      height: 21.5rem;
+      margin: 5px;
+      border: 1px solid $blue-dark;
+      border-radius: 5px;
+      &-name {
+        background: $blue-dark;
+        color: $white;
+        padding: 0.5rem 1rem;
+        font-size: 1.8rem;
+        font-weight: 700;
+      }
+      &-body {
+        width: 95%;
+        margin: auto;
+        display: flex;
+        // justify-content: center;
+        &-img {
+          // padding: 5px;
+          margin: 5px 5px 2px 0;
+          img {
+            height: 167px;
+          }
+        }
+        &-info {
+          padding: 6px;
+          font-size: 1.3rem;
+          &-voice {
+            display: flex;
+            flex-wrap: wrap;
+            border-bottom: 2px solid rgba(0, 0, 0, 0.125);
+            height: 26%;
+            padding-bottom: 10px;
+            &-item {
+              padding: 3px;
+              height: 10px;
+            }
+          }
+          &-bio {
+            padding-top: 7px;
+          }
+        }
+      }
+    }
+  }
 }
