@@ -8,6 +8,10 @@
   position: fixed;
   width: 90%;
 
+  @include respond(big-desktop) {
+    width: 93%;
+  }
+
   &-brand {
     font-family: $brand-font;
     font-size: 2rem;

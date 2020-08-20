@@ -3,6 +3,9 @@
   margin: auto;
   padding-bottom: 50rem;
   width: 83%;
+  @include respond(big-desktop) {
+    width: 150rem;
+  }
   h2 {
     font-weight: 400;
     font-size: $sub-title;
@@ -12,6 +15,7 @@
   &-crew {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 
     &-member {
       width: 38rem;
@@ -19,6 +23,11 @@
       margin: 5px;
       border: 1px solid $blue-dark;
       border-radius: 5px;
+
+      @include respond(tab-port) {
+        width: 50rem;
+        height: 29rem;
+      }
 
       &-name {
         background: $blue-dark;
@@ -43,6 +52,9 @@
         &-info {
           padding: 6px;
           font-size: 1.3rem;
+          @include respond(tab-port) {
+            font-size: 1.6rem;
+          }
         }
       }
 
@@ -53,6 +65,9 @@
         padding: 6px;
         font-weight: 700;
         font-size: 1.15rem;
+        @include respond(tab-port) {
+          font-size: 1.6rem;
+        }
         &-item {
           margin: 1px 8px;
         }
@@ -63,6 +78,7 @@
   &-cast {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 
     &-member {
       width: 38rem;
@@ -70,6 +86,10 @@
       margin: 5px;
       border: 1px solid $blue-dark;
       border-radius: 5px;
+      @include respond(tab-port) {
+        width: 50rem;
+        height: 29rem;
+      }
       &-name {
         background: $blue-dark;
         color: $white;
@@ -92,6 +112,9 @@
         &-info {
           padding: 6px;
           font-size: 1.3rem;
+          @include respond(tab-port) {
+            font-size: 1.6rem;
+          }
           &-voice {
             display: flex;
             flex-wrap: wrap;

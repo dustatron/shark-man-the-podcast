@@ -3,7 +3,10 @@
 .index {
   margin: auto;
   padding-bottom: 50rem;
-  width: 83%;
+  width: 40%;
+  @include respond(tab-port) {
+    width: 80%;
+  }
   &-listen {
     h2 {
       font-weight: 400;
@@ -32,9 +35,9 @@
 
     &-item {
       margin-top: 4rem;
-      width: 58%;
+      width: 100%;
       @include respond(tab-port) {
-        width: 98%;
+        width: 100%;
       }
 
       &-head {
