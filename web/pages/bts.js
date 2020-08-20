@@ -9,7 +9,7 @@ const bts = ({ bts }) => {
     <>
       <PageTitle title={bts.title} />
       <div className={s.blurb}>
-        <div className={s['blurb-title']}>Tales from behind the scenes</div>
+        <div className={s['blurb-title']}>{bts.subtitle}</div>
         <div className={s['blurb-body']}>{bts.copy}</div>
       </div>
       <div className={s.bts}>
