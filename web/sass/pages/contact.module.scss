@@ -3,6 +3,7 @@
 .contact {
   width: 40%;
   margin: auto;
+  font-size: 1.6rem;
 
   @include respond(tab-land) {
     width: 70%;
@@ -19,6 +20,14 @@
     border-radius: 5px;
     margin-top: 8rem;
     margin-bottom: 10rem;
+
+    input {
+      font-size: 1.6rem;
+    }
+
+    textarea {
+      font-size: 1.6rem;
+    }
 
     h2 {
       color: $white;
