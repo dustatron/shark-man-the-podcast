@@ -29,20 +29,14 @@ const NavMenu = () => {
               <Nav.Link className={s['navbar-menu-item']}>Episodes</Nav.Link>
             </Link>
             <Link href='/credits' passHref>
-              <Nav.Link as='span' className={s['navbar-menu-item']}>
-                Credits
-              </Nav.Link>
+              <Nav.Link className={s['navbar-menu-item']}>Credits</Nav.Link>
             </Link>
 
             <Link href='/bts' passHref>
-              <Nav.Link as='span' className={s['navbar-menu-item']}>
-                BTS
-              </Nav.Link>
+              <Nav.Link className={s['navbar-menu-item']}>BTS</Nav.Link>
             </Link>
             <Link href='/contact' passHref>
-              <Nav.Link as='span' className={s['navbar-menu-item']}>
-                Contact Us
-              </Nav.Link>
+              <Nav.Link className={s['navbar-menu-item']}>Contact Us</Nav.Link>
             </Link>
           </Nav>
         </Navbar.Collapse>
