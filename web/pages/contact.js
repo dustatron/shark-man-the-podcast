@@ -24,8 +24,6 @@ const contact = () => {
       },
     };
 
-    console.log(JSON.stringify(params));
-
     const options = {
       method: 'POST',
       headers: { 'Content-type': 'application/json' },
