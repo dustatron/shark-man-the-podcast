@@ -1,7 +1,7 @@
 @import '../main.scss';
 .header {
   background: $blue-lite;
-  height: 50rem;
+  height: 40rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,7 +13,7 @@
   &-box {
     display: flex;
     justify-content: space-between;
-    width: 60%;
+    width: 65%;
     @include respond(tab-land) {
       flex-direction: column;
       width: 90%;
