@@ -4,15 +4,13 @@ import Link from 'next/link';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 
 const NavMenu = () => {
-  // const [selected, setSelected] = useState('/');
-
-  const handleClick = (select) => {
-    console.log('click');
-    // setSelected(select);
-  };
-
   return (
-    <Navbar collapseOnSelect expand='lg' className={s['navbar']} fixed='top'>
+    <Navbar
+      collapseOnSelect
+      expand='lg'
+      className={s['navbar']}
+      fixed='top'
+      variant='dark'>
       <Container>
         <Navbar.Brand className={s['navbar-brand']}>
           <Link href='/'>
@@ -27,27 +25,25 @@ const NavMenu = () => {
           id='responsive-navbar-nav'
           className={s['navbar-menu']}>
           <Nav className='ml-auto'>
-            <Nav.Link className={s['navbar-menu-item']}>
-              <Link href='/'>
-                <a onClick={() => handleClick('/')}>Episodes</a>
-              </Link>
-            </Nav.Link>
-            <Nav.Link className={s['navbar-menu-item']}>
-              <Link href='/credits'>
-                <a onClick={() => handleClick('/')}>Credits</a>
-              </Link>
-            </Nav.Link>
+            <Link href='/' passHref>
+              <Nav.Link className={s['navbar-menu-item']}>Episodes</Nav.Link>
+            </Link>
+            <Link href='/credits' passHref>
+              <Nav.Link as='span' className={s['navbar-menu-item']}>
+                Credits
+              </Nav.Link>
+            </Link>
 
-            <Nav.Link className={s['navbar-menu-item']}>
-              <Link href='/bts'>
-                <a onClick={() => handleClick('/bts')}>BTS</a>
-              </Link>
-            </Nav.Link>
-            <Nav.Link className={s['navbar-menu-item']}>
-              <Link href='/contact'>
-                <a>Contact Us</a>
-              </Link>
-            </Nav.Link>
+            <Link href='/bts' passHref>
+              <Nav.Link as='span' className={s['navbar-menu-item']}>
+                BTS
+              </Nav.Link>
+            </Link>
+            <Link href='/contact' passHref>
+              <Nav.Link as='span' className={s['navbar-menu-item']}>
+                Contact Us
+              </Nav.Link>
+            </Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
