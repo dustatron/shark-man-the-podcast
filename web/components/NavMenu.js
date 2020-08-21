@@ -12,7 +12,7 @@ const NavMenu = () => {
   };
 
   return (
-    <Navbar collapseOnSelect expand='lg' className={s['navbar']}>
+    <Navbar collapseOnSelect expand='lg' className={s['navbar']} fixed='top'>
       <Container>
         <Navbar.Brand className={s['navbar-brand']}>
           <Link href='/'>

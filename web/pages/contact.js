@@ -29,7 +29,12 @@ const contact = () => {
             />
           </Form.Group>
 
-          <Button variant='light' size='lg' type='submit' block>
+          <Button
+            variant='outline-light'
+            size='lg'
+            size='lg'
+            type='submit'
+            block>
             Submit
           </Button>
         </Form>

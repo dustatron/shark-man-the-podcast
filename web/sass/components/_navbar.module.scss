@@ -4,7 +4,6 @@
   display: flex;
   justify-content: space-between;
   background: $blue-mid;
-  padding: 2rem 8rem;
   position: fixed;
   width: 100%;
 
@@ -55,12 +54,4 @@
       }
     }
   }
-}
-
-.selected {
-  // font-weight: 900;
-  // border-bottom: 2px solid $white;
-  // @include respond(tab-port) {
-  //   font-weight: 600;
-  // }
 }
