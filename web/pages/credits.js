@@ -38,7 +38,7 @@ const credits = () => {
   return (
     <>
       <PageTitle title={section ? section.title : ' '} />
-      <div className={s.credits}>
+      <main className={s.credits}>
         {crew || cast ? ' ' : <div className='loading'> </div>}
         <h2>Creative & Production</h2>
         <div className={s['credits-crew']}>
@@ -50,7 +50,10 @@ const credits = () => {
                 </div>
                 <div className={s['credits-crew-member-body']}>
                   <div className={s['credits-crew-member-body-img']}>
-                    <img src={urlFor(person.image)} />
+                    <img
+                      src={urlFor(person.image)}
+                      alt={`${person.name}'s face`}
+                    />
                   </div>
                   <div className={s['credits-crew-member-body-info']}>
                     <BlockContent blocks={person.bio} {...client.config()} />
@@ -78,7 +81,10 @@ const credits = () => {
                 </div>
                 <div className={s['credits-cast-member-body']}>
                   <div className={s['credits-cast-member-body-img']}>
-                    <img src={urlFor(person.image)} />
+                    <img
+                      src={urlFor(person.image)}
+                      alt={`${person.name}'s face`}
+                    />
                   </div>
                   <div className={s['credits-cast-member-body-info']}>
                     <div className={s['credits-cast-member-body-info-voice']}>
@@ -101,7 +107,7 @@ const credits = () => {
               </div>
             ))}
         </div>
-      </div>
+      </main>
     </>
   );
 };

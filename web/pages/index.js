@@ -6,7 +6,7 @@ import PageTitle from '../components/PageTitle';
 
 export default function Home({ episodes, section }) {
   return (
-    <div>
+    <>
       <PageTitle title={section.title} />
       <main className={s.index}>
         {/* --------- Sub Title and icons ------------ */}
@@ -82,7 +82,7 @@ export default function Home({ episodes, section }) {
           ))}
         </div>
       </main>
-    </div>
+    </>
   );
 }
 

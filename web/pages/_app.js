@@ -13,10 +13,19 @@ function MyApp({ Component, pageProps }) {
         <link rel='icon' href='/favicon.ico' />
         <link
           href='https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap'
-          rel='stylesheet'></link>
+          rel='stylesheet'
+        />
         <link
           href='https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap'
-          rel='stylesheet'></link>
+          rel='stylesheet'
+        />
+
+        <meta httpEquiv='Content-Type' content='text/html; charset=utf-8' />
+        <meta
+          name='description'
+          content='Shark-Man, or Sharkman is a magical radio theater or audio drama. It is set on the Oregon Coast and details a story about a man who finds out he has shark powers and with the help from his friends has to save the world from an evil wizard.'
+        />
+        <meta name='viewport' content='width=device-width, initial-scale=1' />
       </Head>
       <NavMenu />
       <Header />
