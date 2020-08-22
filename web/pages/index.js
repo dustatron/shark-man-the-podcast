@@ -67,15 +67,16 @@ export default function Home({ episodes, section }) {
 
         <div className={s['index-blurb']}>{section.copy}</div>
         <div className={s['index-list']}>
+          {episodes ? <></> : <div className='loading'> </div>}
           {episodes.map((ep) => (
-            <div className={s['index-list-item']}>
+            <div key={ep._id} className={s['index-list-item']}>
               <div className={s['index-list-item-head']}>
                 Episode {ep.epNumber}
               </div>
               <iframe
                 src={`https://anchor.fm/shark-man-podcast/embed/episodes/${ep.linkId}`}
                 height='102px'
-                frameborder='0'
+                frameBorder='0'
                 scrolling='no'></iframe>
             </div>
           ))}

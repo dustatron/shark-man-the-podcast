@@ -39,11 +39,12 @@ const credits = () => {
     <>
       <PageTitle title={section ? section.title : ' '} />
       <div className={s.credits}>
+        {crew || cast ? ' ' : <div className='loading'> </div>}
         <h2>Creative & Production</h2>
         <div className={s['credits-crew']}>
           {crew &&
             crew.map((person) => (
-              <div className={s['credits-crew-member']}>
+              <div key={person._id} className={s['credits-crew-member']}>
                 <div className={s['credits-crew-member-name']}>
                   {person.name}
                 </div>
@@ -56,8 +57,10 @@ const credits = () => {
                   </div>
                 </div>
                 <div className={s['credits-crew-member-job']}>
-                  {person.jobs.split(',').map((job) => (
-                    <div className={s['credits-crew-member-job-item']}>
+                  {person.jobs.split(',').map((job, index) => (
+                    <div
+                      key={`${index}_${job}`}
+                      className={s['credits-crew-member-job-item']}>
                       {job}
                     </div>
                   ))}
@@ -69,7 +72,7 @@ const credits = () => {
         <div className={s['credits-cast']}>
           {cast &&
             cast.map((person) => (
-              <div className={s['credits-cast-member']}>
+              <div key={person._id} className={s['credits-cast-member']}>
                 <div className={s['credits-cast-member-name']}>
                   {person.name}
                 </div>
@@ -82,6 +85,7 @@ const credits = () => {
                       <h3>Voice for:</h3>
                       {person.voiced.split(',').map((voice, index, array) => (
                         <div
+                          key={`${index}_${voice}`}
                           className={
                             s['credits-cast-member-body-info-voice-item']
                           }>

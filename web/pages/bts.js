@@ -9,6 +9,7 @@ const bts = ({ bts }) => {
     <>
       <PageTitle title={bts.title} />
       <div className={s.blurb}>
+        {bts.subtitle ? ' ' : <div className='loading'> </div>}
         <div className={s['blurb-title']}>{bts.subtitle}</div>
         <div className={s['blurb-body']}>{bts.copy}</div>
       </div>

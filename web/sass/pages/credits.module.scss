@@ -1,6 +1,7 @@
 @import '../main.scss';
 .credits {
   margin: auto;
+  padding-top: 5rem;
   padding-bottom: 50rem;
   width: 83%;
   @include respond(big-desktop) {
